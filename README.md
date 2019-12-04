@@ -1,16 +1,13 @@
 # ADS Project 5: 
 
-Term: Fall 2018
+Term: Fall 2019
 
 + Team #
-+ Projec title: Lorem ipsum dolor sit amet
++ Projec title: Toxic online comments detector
 + Team members
-	+ team member 1
-	+ team member 2
-	+ team member 3
-	+ team member 4
-	+ team member 5
-+ Project summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	+ Xiaotong Li
+	+ Runzi Qiang
++ Project summary: We developed a html on a topic of identifing and classifing toxic online comments, the dataset we used are originally from kaggle(https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data). We create three models that predicts a probability of each type of toxicity for each comment.
 	
 **Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
 
