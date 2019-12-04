@@ -15,26 +15,31 @@
 
 
 <div class="results">
-    <table border = 1>
-        {% for key, value in result.items() %}
-        <tr>
-            <th> {{ key }} </th>
-            <td> {{ value }} </td>
-        </tr>
-        {% endfor %}
 
-    </table>
+    <div class="w3-container w3-margin">
+        <table class="w3-table-all w3-centered">
+            {% for key, value in result.items() %}
+            <tr>
+                <th> {{ key }} </th>
+                <td> {{ value }} </td>
+            </tr>
+            {% endfor %}
 
-    {% if comments|length == 0 %}
-	    <h2 style="color:blue;">Your thread is good to go! </h2>
-	{% else%}
-        <h2 style="color:blue;"> Your thread is violating because it is
-        {% for c in comments %}
-             {{c}}
-        {% endfor %}
-        .</h2>
-	{% endif %}
+        </table>
+    </div>
 
+    <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+
+        {% if comments|length == 0 %}
+        <h1 style="color:blue;"> Your thread is good to go! </h1>
+        {% else%}
+        <h1 style="color:blue;"> Your thread is violating because it is
+            {% for c in comments %}
+            {{c}}
+            {% endfor %}
+            .</h1>
+        {% endif %}
+    </div>
 </div>
 
 
