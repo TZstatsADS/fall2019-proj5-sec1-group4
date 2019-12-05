@@ -24,12 +24,12 @@ from keras_preprocessing.text import tokenizer_from_json
 nltk.download('stopwords')
 
 # Data Path
-dataPath = "../../Data/Toxic-Thread-Detector/jigsaw-toxic"
+dataPath = "../data"
 MAX_NB_WORDS = 100000    # max no. of words for tokenizer
 MAX_SEQUENCE_LENGTH = 200 # max length of each entry (sentence), including padding
 VALIDATION_SPLIT = 0.2   # data for validation (not used in training)
 EMBEDDING_DIM = 100      # embedding dimensions for word vectors (word2vec/GloVe)
-GLOVE_DIR = "../../Data/Toxic-Thread-Detector/glove/glove.6B."+str(EMBEDDING_DIM)+"d.txt"
+GLOVE_DIR = "../data/glove/glove.6B."+str(EMBEDDING_DIM)+"d.txt"
 labels = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
 
 with CustomObjectScope({'GlorotUniform': glorot_uniform()}):
