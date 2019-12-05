@@ -15,10 +15,13 @@ Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by
 
 ```
 proj/
-├── lib/
+├── app/
+├────── model/
+├────── templates/
+├────── static/
+├────── venv/
 ├── data/
 ├── doc/
-├── figs/
 └── output/
 ```
 
