@@ -1,18 +1,8 @@
 from flask import Flask,render_template,url_for,request
 import pandas as pd
-# Package Imports
-import pandas as pd
 import nltk
-import numpy as np
-import matplotlib.pyplot as plt
 import json
 import myutils
-from nltk.corpus import stopwords
-from sklearn.model_selection import train_test_split
-from tensorflow.keras import regularizers, initializers, optimizers, callbacks
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.preprocessing.text import Tokenizer
-from keras.utils.np_utils import to_categorical
 from tensorflow.keras.layers import *
 
 from keras.utils import CustomObjectScope
@@ -33,9 +23,9 @@ GLOVE_DIR = "../data/glove/glove.6B."+str(EMBEDDING_DIM)+"d.txt"
 labels = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
 
 with CustomObjectScope({'GlorotUniform': glorot_uniform()}):
-    model = load_model('doc/ltsm_model.h5')
+    model = load_model('../doc/ltsm_model.h5')
 
-with open('doc/tokenizer.json') as f:
+with open('../doc/tokenizer.json') as f:
     data = json.load(f)
     tokenizer = tokenizer_from_json(data)
 
