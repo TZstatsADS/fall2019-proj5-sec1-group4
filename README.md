@@ -13,6 +13,10 @@ Term: Fall 2019
 
 
 __Instruction to open the app__:
++ Download the dataset from kaggle. save the data to the --data/ folder
++ Please download glove.6B.100d.txt from this website: https://www.kaggle.com/terenceliu4444/glove6b100dtxt and change the path. Suggested to save it to data/glove/glove6b100dtxt
++ Run the main.ipynb and run the model. Save both the model and tokenizer to the /app/model folder
++ Run the app.py file and you can test our app freely!
 
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
