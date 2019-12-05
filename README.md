@@ -4,7 +4,7 @@ Term: Fall 2019
 
 + Team Section1 Group4
 + Projec title: Toxic online comments detector
-<img src="figs/web.png" alt="Toxic Thread Detector" width="500"/>
+<img src="figs/web.png" alt="Toxic Thread Detector"/>
 
 + Team members
 	+ Xiaotong Li (xl2788)
